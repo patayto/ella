@@ -131,6 +131,18 @@
             height: 400px;
             border: 1px solid #333333;
         }
+	    
+	 #page2 {
+		 padding: 50px;
+	    }
+	    
+	 #page1 {
+		 padding: 50px;
+	    }
+	    
+	 #main-text {
+		 padding: 50px;
+	    }
     </style>
 
     <title>Experiment</title>
@@ -144,6 +156,7 @@
                 $("body").append(`
 					<div id="page2">
 					<h2>Task 2: Using your imagination</h2>
+					<div id="main-text">
 					    <p>What does this way of speaking tell us about this person?</p>
 						<ul>
                             <li>What do they look like? </li>
@@ -163,7 +176,9 @@
 						<p>Once you've thought about these things, use your imagination to <u><b>draw a person and their surroundings</u></b> that you think could match the way this person speaks.</p>
 						<p>Try not to focus too much on what was said in the clip. Focus instead on <u><b>the way the person is speaking.</u></b></p>
 						<img src="drawing.png" width="25%" height="25%">
+						<br>
 						<p>Once you're done, please bring your drawing into school and give to your teacher to look after. Thank you so much for taking part!</p>
+						</div>
 					</div>
 				`);
                 currentPage = 2;
@@ -174,6 +189,7 @@
 <body>
 <div id="page1">
 	<h2>Task 1: Listening and Thinking</h2>
+	<div id="main-text">
     <p>You are going to hear a clip of someone talking. Based on how they talk, I'd like you to imagine <b><u>what this person may be like.</u></b></p>
     <p>For example:</p>
     <ul>
@@ -192,6 +208,7 @@
 	 </audio>
     <p>Take 5 minutes to do this, you can write down any ideas if you want to, and feel free to listen to the audio clip as many times as you like.</p>
     <button onclick="nextPage()">Next!</button>
+	</div>
 </div>
 </body>
 </html>
